@@ -1,0 +1,220 @@
+{
+  "books": [
+    {
+      "title": "The Adventures of Huckleberry Finn",
+      "author": "Mark Twain",
+      "isbn": "9780142437179",
+      "publishedDate": "1884-12-10",
+      "genre": "Adventure",
+      "pages": 366,
+      "language": "English"
+    },
+    {
+      "title": "The Grapes of Wrath",
+      "author": "John Steinbeck",
+      "isbn": "9780143039433",
+      "publishedDate": "1939-04-14",
+      "genre": "Fiction",
+      "pages": 464,
+      "language": "English"
+    },
+    {
+      "title": "The Scarlet Letter",
+      "author": "Nathaniel Hawthorne",
+      "isbn": "9780142437261",
+      "publishedDate": "1850-03-16",
+      "genre": "Romance",
+      "pages": 238,
+      "language": "English"
+    },
+    {
+      "title": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "isbn": "9780141439570",
+      "publishedDate": "1890-06-20",
+      "genre": "Philosophical Fiction",
+      "pages": 254,
+      "language": "English"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "isbn": "9780061120084",
+      "publishedDate": "1960-07-11",
+      "genre": "Fiction",
+      "pages": 336,
+      "language": "English"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "isbn": "9780451524935",
+      "publishedDate": "1949-06-08",
+      "genre": "Dystopian",
+      "pages": 328,
+      "language": "English"
+    },
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "isbn": "9780743273565",
+      "publishedDate": "1925-04-10",
+      "genre": "Fiction",
+      "pages": 180,
+      "language": "English"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "isbn": "9781503290563",
+      "publishedDate": "1813-01-28",
+      "genre": "Romance",
+      "pages": 279,
+      "language": "English"
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "isbn": "9780547928227",
+      "publishedDate": "1937-09-21",
+      "genre": "Fantasy",
+      "pages": 310,
+      "language": "English"
+    },
+    {
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "isbn": "9781503280786",
+      "publishedDate": "1851-11-14",
+      "genre": "Adventure",
+      "pages": 720,
+      "language": "English"
+    },
+    {
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "isbn": "9780199232765",
+      "publishedDate": "1869-01-01",
+      "genre": "Historical Fiction",
+      "pages": 1392,
+      "language": "English"
+    },
+    {
+      "title": "Hamlet",
+      "author": "William Shakespeare",
+      "isbn": "9780743477123",
+      "publishedDate": "1603-01-01",
+      "genre": "Tragedy",
+      "pages": 160,
+      "language": "English"
+    },
+    {
+      "title": "The Odyssey",
+      "author": "Homer",
+      "isbn": "9780140268867",
+      "publishedDate": "-800-01-01",
+      "genre": "Epic",
+      "pages": 560,
+      "language": "English"
+    },
+    {
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "isbn": "9780486415871",
+      "publishedDate": "1866-01-01",
+      "genre": "Psychological Fiction",
+      "pages": 430,
+      "language": "English"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "isbn": "9780316769488",
+      "publishedDate": "1951-07-16",
+      "genre": "Fiction",
+      "pages": 277,
+      "language": "English"
+    },
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "isbn": "9780060850524",
+      "publishedDate": "1932-08-30",
+      "genre": "Dystopian",
+      "pages": 268,
+      "language": "English"
+    },
+    {
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "isbn": "9780618640157",
+      "publishedDate": "1954-07-29",
+      "genre": "Fantasy",
+      "pages": 1178,
+      "language": "English"
+    },
+    {
+      "title": "Anna Karenina",
+      "author": "Leo Tolstoy",
+      "isbn": "9780143035008",
+      "publishedDate": "1877-01-01",
+      "genre": "Realist Novel",
+      "pages": 864,
+      "language": "English"
+    },
+    {
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "isbn": "9780374528379",
+      "publishedDate": "1880-01-01",
+      "genre": "Philosophical Fiction",
+      "pages": 824,
+      "language": "English"
+    },
+    {
+      "title": "Don Quixote",
+      "author": "Miguel de Cervantes",
+      "isbn": "9780060934347",
+      "publishedDate": "1605-01-16",
+      "genre": "Adventure",
+      "pages": 1072,
+      "language": "English"
+    },
+    {
+      "title": "Ulysses",
+      "author": "James Joyce",
+      "isbn": "9780199535675",
+      "publishedDate": "1922-02-02",
+      "genre": "Modernist",
+      "pages": 730,
+      "language": "English"
+    },
+    {
+      "title": "Wuthering Heights",
+      "author": "Emily Brontë",
+      "isbn": "9780141439556",
+      "publishedDate": "1847-12-01",
+      "genre": "Gothic Fiction",
+      "pages": 416,
+      "language": "English"
+    },
+    {
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "isbn": "9780141441146",
+      "publishedDate": "1847-10-16",
+      "genre": "Romance",
+      "pages": 500,
+      "language": "English"
+    },
+    {
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "isbn": "9781451673319",
+      "publishedDate": "1953-10-19",
+      "genre": "Dystopian",
+      "pages": 194,
+      "language": "English"
+    }
+  ]
+}
