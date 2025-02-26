@@ -1,26 +1,22 @@
 const express = require("express");
 const router = express.Router();
-const booksController = require("../controllers/bookss");
+const fictionController = require("../controllers/fiction");
 
-router.get("/", booksController.getAllBooks);
-// Changed getSingle to getBook
-router.get("/:id", booksController.getBook);
-
-router.post("/", booksController.createBook);
-router.put("/:id", booksController.updateBook);
-router.delete("/:id", booksController.deleteBook);
-
-// Keep all your Swagger documentation as is
+router.get("/", fictionController.getAllFictionBooks);
+router.get("/:id", fictionController.getFictionBook);
+router.post("/", fictionController.createFictionBook);
+router.put("/:id", fictionController.updateFictionBook);
+router.delete("/:id", fictionController.deleteFictionBook);
 
 /**
  * @swagger
- * /books:
+ * /fiction:
  *   get:
- *     summary: Get a list of books
- *     description: Retrieve a list of books from the database.
+ *     summary: Get a list of fiction books
+ *     description: Retrieve a list of fiction books from the database.
  *     responses:
  *       200:
- *         description: Successfully retrieved a list of books.
+ *         description: Successfully retrieved a list of fiction books.
  *         content:
  *           application/json:
  *             schema:
@@ -35,20 +31,20 @@ router.delete("/:id", booksController.deleteBook);
 
 /**
  * @swagger
- * /books/{book_id}:
+ * /fiction/{id}:
  *   get:
- *     summary: Get a book by ID
- *     description: Retrieve a single book from the database using the book's unique ID.
+ *     summary: Get a fiction book by ID
+ *     description: Retrieve a single fiction book from the database using its unique ID.
  *     parameters:
  *       - in: path
- *         name: book_id
+ *         name: id
  *         required: true
  *         schema:
  *           type: string
- *         description: The unique identifier of the book.
+ *         description: The unique identifier of the fiction book.
  *     responses:
  *       200:
- *         description: Successfully retrieved the book.
+ *         description: Successfully retrieved the fiction book.
  *         content:
  *           application/json:
  *             schema:
@@ -61,10 +57,10 @@ router.delete("/:id", booksController.deleteBook);
 
 /**
  * @swagger
- * /books:
+ * /fiction:
  *   post:
- *     summary: Create a new book
- *     description: Insert a new book into the database.
+ *     summary: Create a new fiction book
+ *     description: Insert a new fiction book into the database.
  *     requestBody:
  *       required: true
  *       content:
@@ -73,7 +69,7 @@ router.delete("/:id", booksController.deleteBook);
  *             $ref: '#/components/schemas/Book'
  *     responses:
  *       201:
- *         description: Successfully created a book.
+ *         description: Successfully created a fiction book.
  *         content:
  *           application/json:
  *             schema:
@@ -86,17 +82,17 @@ router.delete("/:id", booksController.deleteBook);
 
 /**
  * @swagger
- * /books/{book_id}:
+ * /fiction/{id}:
  *   put:
- *     summary: Update an existing book
- *     description: Update a book's details in the database using the provided request body.
+ *     summary: Update an existing fiction book
+ *     description: Update a fiction book's details in the database using the provided request body.
  *     parameters:
  *       - in: path
- *         name: book_id
+ *         name: id
  *         required: true
  *         schema:
  *           type: string
- *         description: The unique identifier of the book.
+ *         description: The unique identifier of the fiction book.
  *     requestBody:
  *       required: true
  *       content:
@@ -105,7 +101,7 @@ router.delete("/:id", booksController.deleteBook);
  *             $ref: '#/components/schemas/Book'
  *     responses:
  *       200:
- *         description: Successfully updated the book.
+ *         description: Successfully updated the fiction book.
  *         content:
  *           application/json:
  *             schema:
@@ -120,20 +116,28 @@ router.delete("/:id", booksController.deleteBook);
 
 /**
  * @swagger
- * /books/{book_id}:
+ * /fiction/{id}:
  *   delete:
- *     summary: Delete an existing book
- *     description: Remove a book from the database using the provided book ID.
+ *     summary: Delete an existing fiction book
+ *     description: Remove a fiction book from the database using the provided book ID.
  *     parameters:
  *       - in: path
- *         name: book_id
+ *         name: id
  *         required: true
  *         schema:
  *           type: string
- *         description: The unique identifier of the book.
+ *         description: The unique identifier of the fiction book.
  *     responses:
  *       200:
- *         description: Successfully deleted the book.
+ *         description: Successfully deleted the fiction book.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: "Book successfully deleted."
  *       404:
  *         description: Book not found.
  *       500:
