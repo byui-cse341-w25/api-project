@@ -8,6 +8,16 @@ const options = {
       version: "1.0.0",
       description: "API documentation for your Node.js application",
     },
+    servers: [
+      {
+        url: "http://localhost:3000",
+        description: "Development server",
+      },
+      {
+        url: "https://api-project-r1fz.onrender.com",
+        description: "Production server",
+      },
+    ],
   },
   apis: ["./routes/*.js"], // Path to the API routes
 };
