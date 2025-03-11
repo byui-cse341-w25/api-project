@@ -6,7 +6,7 @@ const options = {
     info: {
       title: "My Personal API documentation",
       version: "1.0.0",
-      description: "API documentation for your Node.js application",
+      description: "API documentation for my Node.js application",
     },
     servers: [
       {
