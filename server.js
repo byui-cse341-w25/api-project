@@ -8,9 +8,18 @@ const app = express();
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-app.use(bodyParser.json()).use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  next();
+app
+  .use(bodyParser.json())
+  .use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    next();
+  })
+  .use("/", require("./routes"));
+process.on("uncaughtException", (err, origin) => {
+  console.log(
+    (process.stderr.fd,
+    `Caught exception: ${err}\n` + `Exception origin: ${origin}`)
+  );
 });
 
 mongodb.initDb((err, mongodb) => {
