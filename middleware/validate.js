@@ -7,7 +7,7 @@ const saveContact = (req, res, next) => {
     isbn: "required|string",
     publishedDate: "required|string",
     genre: "required|string",
-    pages: "required|string",
+    pages: "integer|string",
     language: "required|string",
   };
 
