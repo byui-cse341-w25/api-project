@@ -1,13 +1,13 @@
 const validator = require("../helpers/validate");
 
-const saveContact = (req, res, next) => {
+const validateBook = (req, res, next) => {
   const validationRule = {
     title: "required|string",
     author: "required|string",
     isbn: "required|string",
-    publishedDate: "required|string",
+    publishedDate: "required|string|date",
     genre: "required|string",
-    pages: "integer|string",
+    pages: "required|integer",
     language: "required|string",
   };
 
@@ -24,5 +24,5 @@ const saveContact = (req, res, next) => {
 };
 
 module.exports = {
-  saveContact,
+  validateBook,
 };

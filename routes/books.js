@@ -1,13 +1,53 @@
 const express = require("express");
 const router = express.Router();
-const booksController = require("../controllers/bookss");
+const booksController = require("../controllers/books");
+const { validateBook } = require("../middleware/validate");
+
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     Book:
+ *       type: object
+ *       required:
+ *         - title
+ *         - author
+ *         - isbn
+ *         - publishedDate
+ *         - genre
+ *         - pages
+ *         - language
+ *       properties:
+ *         title:
+ *           type: string
+ *           description: The title of the book
+ *         author:
+ *           type: string
+ *           description: The author of the book
+ *         isbn:
+ *           type: string
+ *           description: The ISBN of the book
+ *         publishedDate:
+ *           type: string
+ *           format: date
+ *           description: The publication date of the book (YYYY-MM-DD)
+ *         genre:
+ *           type: string
+ *           description: The genre of the book
+ *         pages:
+ *           type: integer
+ *           description: The number of pages in the book
+ *         language:
+ *           type: string
+ *           description: The language the book is written in
+ */
 
 router.get("/", booksController.getAllBooks);
 // Changed getSingle to getBook
 router.get("/:id", booksController.getBook);
 
-router.post("/", booksController.createBook);
-router.put("/:id", booksController.updateBook);
+router.post("/", validateBook, booksController.createBook);
+router.put("/:id", validateBook, booksController.updateBook);
 router.delete("/:id", booksController.deleteBook);
 
 // Keep all your Swagger documentation as is
@@ -32,6 +72,7 @@ router.delete("/:id", booksController.deleteBook);
  *       500:
  *         description: Internal server error.
  */
+router.get("/", booksController.getAllBooks);
 
 /**
  * @swagger
